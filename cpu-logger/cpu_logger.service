@@ -1,0 +1,9 @@
+[Unit]
+Description=CPU logger in python
+
+[Service]
+ExecStart=python3 /home/filippo/lab7/cpu_logger --interval 2
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
